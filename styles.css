@@ -1,0 +1,84 @@
+.menu{
+    list-style-type: none; 
+    padding: 0;
+}
+.menu li{
+    padding: 10px; 
+    border-bottom: 1px solid #ccc; 
+}
+.menu li:last-child {
+    border-bottom: none; 
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.cont3{
+            
+            letter-spacing: 2px;
+            font-family: Helvetica;
+            color:violet;
+            text-align: center;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    max-height: 800px; 
+    overflow-y: auto; 
+}
+.imagen_fondo{
+    background-image:url("../fondo2.jpg");
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20em;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../fondo.jpg"); /* Ruta de tu segundo fondo */
+    background-size: cover;
+    animation: moveBackground 20s linear infinite; /* Ajusta la velocidad y el tipo de movimiento */
+}
+.cont2{
+    letter-spacing: 2px;
+            font-family: Helvetica;
+            color:midnightblue;
+            text-align: center;
+}
+
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.container {
+    position:relative;
+    text-align: left; 
+    font-family: Helvetica;
+    color:darkslategrey;
+}
+
+.image {
+    width: 100%;
+}
+
+.text-overlay {
+    position:relative;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color:indigo; 
+    text-align: right; 
+}
